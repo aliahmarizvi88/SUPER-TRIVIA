@@ -43,11 +43,11 @@ Used to fetch quiz questions by category and difficulty.
 
 ## 🤝 Contributing
 
--Pull requests and suggestions are welcome!
--Feel free to fork the project and submit improvements or features.
+- Pull requests and suggestions are welcome!
+- Feel free to fork the project and submit improvements or features.
 
 ## Acknowledgements
 
--Open Trivia DB API
--Tailwind CSS
--Vite
+- Open Trivia DB API
+- Tailwind CSS
+- Vite
