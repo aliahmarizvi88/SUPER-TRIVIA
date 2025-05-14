@@ -48,23 +48,22 @@ const ResultPage = () => {
   }, [hasStarted, navigate]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-400 via-lime-400 to-yellow-300 flex flex-col items-center justify-center px-4">
-      <div className="bg-white p-8 rounded-lg shadow-xl w-full max-w-md text-center">
-        <h2 className="text-3xl font-bold mb-4 text-gray-800">Game Over!</h2>
-        <p className="text-xl text-gray-700 mb-6">
+    <div className="min-h-screen bg-gradient-to-br from-green-400 via-lime-400 to-yellow-300 flex flex-col items-center justify-center px-2 sm:px-4">
+      <div className="bg-white p-4 sm:p-8 rounded-lg shadow-xl w-full max-w-md text-center">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-gray-800">
+          Game Over!
+        </h2>
+        <p className="text-lg sm:text-xl text-gray-700 mb-6">
           Your Score: <span className="font-bold text-green-600">{score}</span>
         </p>
-
         <input
           type="text"
           placeholder="Enter your name"
-          className="w-full px-4 py-2 rounded border border-gray-300 mb-4 focus:outline-none focus:ring-2 focus:ring-green-500"
+          className="w-full px-3 py-2 rounded border border-gray-300 mb-4 focus:outline-none focus:ring-2 focus:ring-green-500 text-base"
           value={playerName}
           onChange={(e) => setPlayerName(e.target.value)}
         />
-
         {error && <p className="text-red-600 text-sm mb-2">{error}</p>}
-
         <button
           onClick={handleSubmit}
           disabled={!playerName.trim() || loading}
@@ -77,7 +76,7 @@ const ResultPage = () => {
           {loading ? 'Submitting...' : 'Submit Score'}
         </button>
       </div>
-      <p className="py-10 text-sm text-gray-500">
+      <p className="py-6 sm:py-10 text-xs sm:text-sm text-gray-500 text-center">
         Note: This is only to save your name and score in database for other
         players
       </p>

@@ -53,11 +53,11 @@ const DifficultyPage = () => {
   }, [hasStarted, navigate]);
 
   return (
-    <div className="h-screen flex flex-col justify-center items-center bg-green-100">
-      <h2 className="text-4xl font-bold mb-8 text-gray-700">
+    <div className="h-screen flex flex-col justify-center items-center bg-green-100 px-2 sm:px-0">
+      <h2 className="text-2xl sm:text-4xl font-bold mb-8 text-gray-700 text-center">
         Select Difficulty
       </h2>
-      <div className="flex  flex-col gap-6">
+      <div className="flex flex-col gap-4 sm:gap-6 w-full max-w-xs sm:max-w-md">
         {difficulties.map((diff) => {
           let hover = '';
           if (diff === 'Easy') hover = 'hover:bg-green-400 hover:text-white';
@@ -67,7 +67,7 @@ const DifficultyPage = () => {
           return (
             <button
               key={diff}
-              className={`bg-gray-50 text-green-600 py-4 rounded-xl font-bold text-xl shadow-md px-20 wx-20 transition duration-300 transform hover:translate-y-1 ${hover}`}
+              className={`bg-gray-50 text-green-600 py-3 sm:py-4 rounded-xl font-bold text-lg sm:text-xl shadow-md px-8 sm:px-20 transition duration-300 transform hover:translate-y-1 ${hover}`}
               onClick={() => selectDifficulty(diff)}
             >
               {diff}
