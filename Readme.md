@@ -38,7 +38,8 @@ root/
 
 ## API USED
 
-Open Trivia DB
+# Open Trivia DB
+
 Used to fetch quiz questions by category and difficulty.
 
 ## 🤝 Contributing
