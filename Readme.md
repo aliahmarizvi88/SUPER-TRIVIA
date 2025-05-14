@@ -38,10 +38,15 @@ root/
 
 ## API USED
 
-# Open Trivia DB
+### Open Trivia DB
 
 Used to fetch quiz questions by category and difficulty.
 
+## Deployed:
+- front-end: Netlify
+- Back-end: render
+- Link: (https://triviagames50.netlify.app/)
+  
 ## 🤝 Contributing
 
 - Pull requests and suggestions are welcome!
