@@ -21,12 +21,15 @@ const ResultPage = () => {
     setLoading(true);
 
     try {
-      await axios.post('http://localhost:5000/api/submitScore', {
-        playerName,
-        category,
-        difficulty,
-        score,
-      });
+      await axios.post(
+        'https://trivia-backend-n29m.onrender.com/api/submitScore',
+        {
+          playerName,
+          category,
+          difficulty,
+          score,
+        }
+      );
 
       setLoading(false);
       setHasStarted(false);

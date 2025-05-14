@@ -19,7 +19,9 @@ const ScoresPage = () => {
 
   const fetchScore = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/displayScore');
+      const res = await axios.get(
+        'https://trivia-backend-n29m.onrender.com/api/displayScore'
+      );
       const sorted = res.data.sort((a, b) => b.score - a.score);
       setScore(sorted);
     } catch (error) {
